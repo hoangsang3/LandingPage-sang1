@@ -1,0 +1,130 @@
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: blueviolet;
+    border: none;
+    padding: 1.2rem 2rem;
+    color: whitesmoke;
+}
+
+.top {
+    display: flex;
+
+    .topContent {
+        flex: 1;
+        position: relative;
+
+        .logoTop {
+            max-width: 80px;
+            position: absolute;
+            top: 1rem;
+            left: 2rem;
+            cursor: pointer;
+        }
+
+        .topContentTopic {
+            padding: 5rem 10rem 1rem;
+
+            h3 {
+                font-size: 4rem;
+                font-weight: 700;
+            }
+
+            p {
+                margin: 1rem 0;
+                font-size: 1.5rem;
+                line-height: 2rem;
+            }
+        }
+    }
+
+    .topSubContent {
+        flex-basis: 40%;
+        background: #6143bf;
+        display: flex;
+        flex-direction: column;
+
+        nav {
+            flex-basis: 5rem;
+            color: white;
+            align-items: center;
+
+            ul {
+                justify-content: flex-end;
+                display: flex;
+
+                li {
+                    opacity: 0.75;
+                    padding: 2rem;
+                }
+
+                li:hover {
+                    opacity: 1;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        img {
+            height: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+footer {
+    background: #6143bf;
+    flex: 1;
+    color: white;
+    display: flex;
+
+    .footerInfo {
+        flex-basis: 50%;
+        padding: 5rem 10rem;
+
+        .logoBottom {
+            max-width: 80px;
+            position: absolute;
+            top: 34rem;
+            left: 2rem;
+            cursor: pointer;
+        }
+
+        h3 {
+            font-size: 4rem;
+            font-weight: 700;
+        }
+
+        p {
+            margin: 1rem 0;
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+
+    .footerForm {
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10rem;
+
+        .formControl {
+            display: flex;
+
+            input {
+                padding-left: 1rem;
+                width: 20rem;
+                margin-right: 1rem;
+                outline: 0;
+                outline-style: none;
+                outline-width: 0;
+            }
+        }
+    }
+}
